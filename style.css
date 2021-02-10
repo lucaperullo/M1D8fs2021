@@ -1,7 +1,24 @@
 body {
-  font-family: "Lexend Giga", sans-serif;
+  font-family: "Lexend Giga", sans-serif !important;
   transition: 0.25s ease;
   overflow: hidden;
+}
+.actionbtns {
+  cursor: pointer;
+  padding: 60px;
+  transition: 0.25s ease;
+}
+.actionbtns:hover {
+  box-shadow: 2px 2px 6px #000000;
+}
+img {
+  cursor: pointer;
+  transition: 0.25s ease;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+img:hover {
+  box-shadow: 2px 1px 3px #000000;
 }
 h1 {
   margin-bottom: 5vh !important;
@@ -13,11 +30,7 @@ h1 {
   display: flex;
   justify-content: center;
 }
-input {
-  color: rgb(0, 0, 0);
-  border-radius: 7px;
-  background-color: #f7f7f7d7;
-}
+
 li {
   list-style-type: none;
   padding: 0;
@@ -27,15 +40,18 @@ ul {
   border-radius: 7px;
   max-width: 500px;
   width: 100%;
-  background-color: #9690a54b;
-  backdrop-filter: blur(20px);
+
   flex-direction: column;
 }
 li {
+  background-color: #bfbec02f;
+  padding: 15px;
   border: solid 1px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  backdrop-filter: blur(20px);
+  margin-bottom: 10px;
 }
 .buttonn {
   border-radius: 7px;
@@ -43,23 +59,38 @@ li {
 .completedtask {
   margin-right: 3px;
   border: none;
-  border-radius: 50px;
+
   width: 20px;
   height: 20px;
-  background-color: greenyellow;
 }
 .deltask {
   border: none;
-  border-radius: 50px;
+
   width: 20px;
   height: 20px;
-  background-color: red;
 }
-input {
-  height: 30px;
+
+#to-add {
+  width: 600px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.472);
+  color: black;
+  border-radius: 30px;
+  border: none;
 }
 button {
   height: 30px;
+}
+.modal-content {
+  background-color: rgba(154, 169, 179, 0.568) !important;
+  height: 40vh;
+}
+.modal-body {
+  padding: 50px !important;
+}
+.fitImage {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .color-change-2x {
   -webkit-animation: color-change-2x 30s linear infinite alternate both;
@@ -72,36 +103,36 @@ button {
 }
 @-webkit-keyframes color-change-2x {
   0% {
-    background: #196d39;
+    background: #6d3b19;
   }
   25% {
-    background: #226b59;
+    background: #6b6422;
   }
   50% {
-    background: #204970;
+    background: #237020;
   }
   75% {
-    background: #402877;
+    background: #8f39a5;
   }
   100% {
-    background: #311f5a;
+    background: #7a236c;
   }
 }
 @keyframes color-change-2x {
   0% {
-    background: #196d39;
+    background: #6d3b19;
   }
   25% {
-    background: #226b59;
+    background: #6b6422;
   }
   50% {
-    background: #204970;
+    background: #237020;
   }
   75% {
-    background: #402877;
+    background: #8f39a5;
   }
   100% {
-    background: #311f5a;
+    background: #7a236c;
   }
 }
 @-webkit-keyframes tracking-in-contract {
@@ -129,4 +160,18 @@ button {
     letter-spacing: normal;
     opacity: 1;
   }
+}
+input[type="color"] {
+  border-radius: 100px !important;
+  background-color: transparent;
+  -webkit-appearance: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
 }
