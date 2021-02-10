@@ -1,0 +1,132 @@
+body {
+  font-family: "Lexend Giga", sans-serif;
+  transition: 0.25s ease;
+  overflow: hidden;
+}
+h1 {
+  margin-bottom: 5vh !important;
+  color: white;
+  margin-top: 20vh !important;
+  text-align: center;
+}
+.container-fluid {
+  display: flex;
+  justify-content: center;
+}
+input {
+  color: rgb(0, 0, 0);
+  border-radius: 7px;
+  background-color: #f7f7f7d7;
+}
+li {
+  list-style-type: none;
+  padding: 0;
+}
+ul {
+  padding: 0;
+  border-radius: 7px;
+  max-width: 500px;
+  width: 100%;
+  background-color: #9690a54b;
+  backdrop-filter: blur(20px);
+  flex-direction: column;
+}
+li {
+  border: solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttonn {
+  border-radius: 7px;
+}
+.completedtask {
+  margin-right: 3px;
+  border: none;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  background-color: greenyellow;
+}
+.deltask {
+  border: none;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+input {
+  height: 30px;
+}
+button {
+  height: 30px;
+}
+.color-change-2x {
+  -webkit-animation: color-change-2x 30s linear infinite alternate both;
+  animation: color-change-2x 30s linear infinite alternate both;
+}
+.tracking-in-contract {
+  -webkit-animation: tracking-in-contract 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #196d39;
+  }
+  25% {
+    background: #226b59;
+  }
+  50% {
+    background: #204970;
+  }
+  75% {
+    background: #402877;
+  }
+  100% {
+    background: #311f5a;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #196d39;
+  }
+  25% {
+    background: #226b59;
+  }
+  50% {
+    background: #204970;
+  }
+  75% {
+    background: #402877;
+  }
+  100% {
+    background: #311f5a;
+  }
+}
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
