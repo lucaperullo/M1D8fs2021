@@ -51,7 +51,7 @@ li {
   align-items: center;
   justify-content: space-between;
   backdrop-filter: blur(20px);
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .buttonn {
   border-radius: 7px;
@@ -72,7 +72,7 @@ li {
 
 #to-add {
   width: 600px;
-  margin-bottom: 10px;
+  height: 50px;
   background-color: rgba(255, 255, 255, 0.472);
   color: black;
   border-radius: 30px;
