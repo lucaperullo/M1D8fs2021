@@ -235,6 +235,7 @@
       };
 
       const imagePreview = () => {
+        let image = document.querySelector(".imguploader").value;
         bodyy.classList.remove("color-change-2x");
         bodyy.style.backgroundImage = `url("${image}")`;
         bodyy.classList.add("fitImage");
