@@ -66,6 +66,7 @@
         />
 
         <img
+          id="addTask"
           style="margin-top: 2px"
           src="https://freeiconshop.com/wp-content/uploads/edd/plus-flat.png"
           height="45"
@@ -177,7 +178,8 @@
         inputField.onkeydown = readInput;
       };
       addEventListener();
-
+      let listItems = [];
+      let listems = {};
       const addtasks = () => {
         let value = document.querySelector("input").value;
         if (value !== "") {
@@ -251,6 +253,12 @@
           h1.color = "white";
         } else {
           h1.color = "#0f0e0ec7";
+        }
+      };
+      let input = document.getElementById("to-add");
+      input.onkeydown = function (e) {
+        if (e.keyCode === 13) {
+          addtasks();
         }
       };
     </script>
