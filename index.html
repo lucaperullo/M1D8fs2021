@@ -31,13 +31,14 @@
         style="display: flex; justify-content: space-between"
         class="container-fluid"
       >
-        <img
-          class="actionbtns"
-          src="https://image.flaticon.com/icons/png/512/126/126467.png"
-          height="150"
-          onclick="resetLS"
-        />
-
+        <a href="login.html">
+          <img
+            class="actionbtns"
+            src="https://image.flaticon.com/icons/png/512/126/126467.png"
+            height="150"
+            onclick="resetLS"
+          />
+        </a>
         <img
           class="actionbtns"
           src="http://cdn.onlinewebfonts.com/svg/img_264914.png"
@@ -46,7 +47,7 @@
           data-target="#ModalCenter"
         />
       </div>
-      <h1 onmouseover="toggleWhite()" id="h1" class="tracking-in-contract">
+      <h1 onclick="toggleWhite()" id="h1" class="tracking-in-contract">
         WELCOME TO YOUR PERSONAL TASKS-LIST
       </h1>
     </div>
@@ -133,6 +134,38 @@
                   src="https://image.flaticon.com/icons/png/512/458/458594.png"
                   height="22"
               /></label>
+            </div>
+            <div class="row">
+              <img
+                height="60"
+                onclick="imagePrerendered()"
+                src="https://wallpapercave.com/wp/wp4469520.jpg"
+              />
+              <img
+                height="60"
+                onclick="imagePrerendered1()"
+                src="https://i.pinimg.com/originals/c6/22/46/c62246425d2c45d07ff2ad24ecd620cc.jpg"
+              />
+              <img
+                height="60"
+                onclick="imagePrerendered2()"
+                src="https://i.redd.it/lfndtoirttvx.jpg"
+              />
+              <img
+                height="60"
+                onclick="imagePrerendered3()"
+                src="https://cdn.wallpapersafari.com/56/10/mrH8av.jpg"
+              />
+              <img
+                height="60"
+                onclick="imagePrerendered4()"
+                src="https://www.pixel4k.com/wp-content/uploads/2018/10/abstract-blue-texture-5k_1539371397.jpg"
+              />
+              <img
+                height="60"
+                onclick="imagePrerendered5()"
+                src="https://i.pinimg.com/originals/3b/8a/d2/3b8ad2c7b1be2caf24321c852103598a.jpg"
+              />
             </div>
           </div>
           <div class="modal-footer">
@@ -260,6 +293,43 @@
         if (e.keyCode === 13) {
           addtasks();
         }
+      };
+      const imagePrerendered = () => {
+        let bodyy = document.querySelector("body");
+        bodyy.classList.remove("color-change-2x");
+
+        bodyy.style.backgroundImage = `url("https://wallpapercave.com/wp/wp4469520.jpg")`;
+        bodyy.classList.add("fitImage");
+      };
+      const imagePrerendered1 = () => {
+        let bodyy = document.querySelector("body");
+        bodyy.classList.remove("color-change-2x");
+        bodyy.classList.add("fitImage");
+        bodyy.style.backgroundImage = `url("https://i.pinimg.com/originals/c6/22/46/c62246425d2c45d07ff2ad24ecd620cc.jpg")`;
+      };
+      const imagePrerendered2 = () => {
+        let bodyy = document.querySelector("body");
+        bodyy.classList.remove("color-change-2x");
+        bodyy.classList.add("fitImage");
+        bodyy.style.backgroundImage = `url("https://i.redd.it/lfndtoirttvx.jpg")`;
+      };
+      const imagePrerendered3 = () => {
+        let bodyy = document.querySelector("body");
+        bodyy.classList.remove("color-change-2x");
+        bodyy.classList.add("fitImage");
+        bodyy.style.backgroundImage = `url("https://cdn.wallpapersafari.com/56/10/mrH8av.jpg")`;
+      };
+      const imagePrerendered4 = () => {
+        let bodyy = document.querySelector("body");
+        bodyy.classList.remove("color-change-2x");
+        bodyy.classList.add("fitImage");
+        bodyy.style.backgroundImage = `url("https://www.pixel4k.com/wp-content/uploads/2018/10/abstract-blue-texture-5k_1539371397.jpg")`;
+      };
+      const imagePrerendered5 = () => {
+        let bodyy = document.querySelector("body");
+        bodyy.classList.remove("color-change-2x");
+        bodyy.classList.add("fitImage");
+        bodyy.style.backgroundImage = `url("https://i.pinimg.com/originals/3b/8a/d2/3b8ad2c7b1be2caf24321c852103598a.jpg")`;
       };
     </script>
     <script
